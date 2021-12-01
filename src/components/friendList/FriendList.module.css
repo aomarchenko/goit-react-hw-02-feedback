@@ -1,0 +1,40 @@
+.green {
+  position: relative;
+}
+.red {
+  position: relative;
+}
+.green::before {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  z-index: 1;
+}
+.red::before {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 1;
+}
+.friendList {
+  padding: 0;
+}
+.item {
+  width: 270px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-shadow: 1px 1px 1px 1px gray;
+  padding: 5px 5px 5px 25px;
+  margin-bottom: 5px;
+}

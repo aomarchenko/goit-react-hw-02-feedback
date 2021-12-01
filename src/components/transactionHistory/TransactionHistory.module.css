@@ -1,0 +1,23 @@
+.transactionHistory{
+    width: 300px;
+    text-align: left;
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 3px;
+    
+}
+.rows tr:nth-child(2n) {
+    background-color: gray;
+    color: white;
+    
+  }
+  .rows{
+    background-color: wheat;
+    color: black;
+      
+  }
+  .head{
+    background-color: black;
+    color: white;
+    height:40px;
+  }
