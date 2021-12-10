@@ -1,8 +1,10 @@
 import React from 'react';
+import styles from './Feedback.module.css';
 
 const FeedbackOptions = ({ onGood, onBad, onNeutral }) => (
-  <div className="FeedbackControls">
+  <div>
     <button
+      className={styles.FeedbackControls}
       type="button"
       onClick={event => {
         onGood();
@@ -11,14 +13,16 @@ const FeedbackOptions = ({ onGood, onBad, onNeutral }) => (
       Good
     </button>
     <button
+      className={styles.FeedbackControls}
       type="button"
       onClick={event => {
         onNeutral();
       }}
     >
-      Neutral:
+      Neutral
     </button>
     <button
+      className={styles.FeedbackControls}
       type="button"
       onClick={event => {
         onBad();

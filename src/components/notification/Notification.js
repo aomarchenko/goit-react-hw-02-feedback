@@ -1,4 +1,4 @@
 import React from 'react';
 
-const Notification = () => <p>There is no feedback</p>;
+const Notification = ({ message }) => <p>{message}</p>;
 export default Notification;
